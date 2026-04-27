@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Domain.Interfaces.Generics;
+using Entities.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +11,8 @@ namespace Domain.Interfaces.ICategoria
 
 
     //São os crud do projetos 
-    public interface InterfaceCategoria
+    public interface InterfaceCategoria : InterfaceGeneric<Categoria>
     {
+        Task<IList<Categoria>> ListarCategoriaUsuario(string emailUsuario);
     }
 }
