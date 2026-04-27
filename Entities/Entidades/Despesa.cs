@@ -10,7 +10,7 @@ namespace Entities.Entidades
 {
 
     [Table("Despesa")]
-    internal class Despesa : Base
+    public class Despesa : Base
     {
         public decimal Valor {  get; set; }
 
