@@ -8,7 +8,9 @@ using System.Threading.Tasks;
 
 namespace Domain.Interfaces.InterfacesServicos
 {
-    public interface ISistemaFinanceiroServico : InterfaceGeneric<SistemaFinanceiro>
+    public interface ISistemaFinanceiroServico 
     {
+        Task AdicionarSistemaFinanceiro(SistemaFinanceiro sistemaFinanceiro);     // o nome da model
+        Task AtualizarSistemaFinanceiro(SistemaFinanceiro sistemaFinanceiro);     // o nome da model
     }
 }

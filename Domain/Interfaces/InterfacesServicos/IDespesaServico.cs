@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,7 @@ namespace Domain.Interfaces.InterfacesServicos
 {
     public interface IDespesaServico
     {
+        Task AdicionarDespesa(Despesa despesa);     // o nome da model
+        Task AtualizarDespesa(Despesa despesa);     // o nome da model
     }
 }
